@@ -15,8 +15,15 @@
 int main(int argc, const char * argv[])
 {
     tds t = tds();
-    t.add_vertex(point(1, 2));
-    t.add_vertex(point(3, 4));
+    
+    for (int i = 0; i < 100; i++)
+    {
+        size_t x = get_storage().get_rand(100);
+        size_t y = get_storage().get_rand(100);
+        t.add_vertex(point(x, y));
+    }
+    std::cout << "you";
+    
 //    size_t t = get_storage().get_id(new point(1, 13));
 //    point *p = get_storage().get_point(t);
 //    

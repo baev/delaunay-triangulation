@@ -65,6 +65,10 @@ void tds::add_vertex(const point p)
         }
         
         tds_[index++]->add_vertex(p_id, nearest.front());
-        nearest.pop_front();
+        if (nearest.size())
+        {
+            nearest.pop_front();
+        }
+        
     } while (get_storage().get_rand(100) < MAGIC_CONST);
 }

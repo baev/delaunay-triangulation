@@ -17,6 +17,12 @@ data_struct::data_struct()
     inf_point_id_ = get_id(get_inf_point());
 }
 
+data_struct::~data_struct()
+{
+    edges_.clear();
+    points_.clear();
+}
+
 size_t data_struct::get_rand(size_t limit) const
 {
     return rand() % limit;
@@ -59,4 +65,10 @@ point * data_struct::get_point(size_t id) const
 edge * data_struct::get_edge(size_t id) const
 {
     return edges_.at(id);
+}
+
+data_struct& get_storage()
+{
+    static data_struct storage;
+    return storage;
 }

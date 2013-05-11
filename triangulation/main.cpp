@@ -10,11 +10,32 @@
 #include <gmp.h>
 #include <gmpxx.h>
 #include "tds.h"
+#include "data_struct.h"
 
 int main(int argc, const char * argv[])
 {
     tds t = tds();
     t.add_vertex(point(1, 2));
+    t.add_vertex(point(3, 4));
+//    size_t t = get_storage().get_id(new point(1, 13));
+//    point *p = get_storage().get_point(t);
+//    
+//    std::cout << p->get_x_coord() << " " << p-> get_y_coord() << std::endl;
+//    
+//    size_t tt = create_edge(t, NULL, NULL);
+//    edge *e = get_storage().get_edge(tt);
+//    
+//    std::cout << e->get_vertex_id() << " " << t << std::endl;
+//    
+//    set_twin_by_id(tt, tt);
+//   
+//    size_t i = get_storage().get_inf_point_id();
+//    p = get_storage().get_point(i);
+//    
+//    std::cout << i << std::endl;
+//    std::cout << p->get_x_coord()
+//        << " " << p->get_y_coord()
+//        << " " << p->get_z_coord() << std::endl;
     
     return 0;
 }

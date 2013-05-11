@@ -17,6 +17,7 @@
 struct data_struct
 {
     data_struct();
+    ~data_struct();
     
     size_t get_id(point *p);
     size_t get_id(edge *e);
@@ -33,10 +34,6 @@ private:
     std::map<size_t, edge *> edges_;
 };
 
-data_struct& get_storage()
-{
-    static data_struct storage;
-    return storage;
-}
+data_struct& get_storage();
 
 #endif /* defined(__triangulation__data_struct__) */

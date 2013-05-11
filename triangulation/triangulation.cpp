@@ -13,6 +13,13 @@
 #include "point.h"
 #include "data_struct.h"
 
+triangulation::triangulation()
+{
+    size_t inf = get_storage().get_inf_point_id();
+    edge *e = new edge(inf, NULL, NULL);
+    edges_.push_back(get_storage().get_id(e));
+}
+
 void triangulation::add_vertex(size_t p_id)
 {
     add_vertex(p_id, locate(*get_storage().get_point(p_id)));
@@ -24,7 +31,7 @@ void triangulation::add_vertex(size_t p_id, size_t nearest_id)
     {
         case 0:
         {
-            edges_.push_back(get_storage().get_inf_point_id());
+            throw "something went wrong!!! empty edges_";
         }
         case 1:
         {

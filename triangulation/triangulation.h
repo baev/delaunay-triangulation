@@ -14,6 +14,7 @@
 #include <vector>
 
 struct triangulation {
+    triangulation();
     
     void add_vertex(size_t p_id);
     void add_vertex(size_t p_id, size_t nearest_id);

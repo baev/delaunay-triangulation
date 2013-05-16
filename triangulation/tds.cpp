@@ -101,11 +101,7 @@ void tds::flip(edge * e1)
         edge *e4t = e1t->next();
         edge *e5t = e4t->next();
         
-//        edge *e2t = e2->twin();
-//        edge *e3t = e3->twin();
-        
         edge *e4 = e4t->twin();
-//        edge *e5 = e5t->twin();
         
         edge *e6 = create_edge(e3->get_vertex_id(), e5t, NULL);
         edge *e6t = create_edge(e4->get_vertex_id(), e3, e6);

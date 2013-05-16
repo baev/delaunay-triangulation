@@ -1,0 +1,3 @@
+[submodule "cg"]
+	path = cg
+	url = git://github.com/Yonka/cg.git

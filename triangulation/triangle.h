@@ -10,7 +10,11 @@
 #define __triangulation__triangle__
 
 #include <iostream>
+<<<<<<< HEAD
 #include "mpoint.h"
+=======
+#include "point.h"
+>>>>>>> b0edb06856069410d4e3f1a3964c05bffadb8848
 
 struct triangle
 {

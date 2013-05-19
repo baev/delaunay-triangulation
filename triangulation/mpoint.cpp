@@ -14,12 +14,12 @@ mpoint::mpoint(const double xx, const double yy)
 }
 
 mpoint::mpoint(const mpf_class xx, const mpf_class yy)
-:x_(xx), y_(yy), z_(1)
+:x_(xx.get_d()), y_(yy.get_d()), z_(1)
 {
 }
 
 mpoint::mpoint(const mpf_class xx, const mpf_class yy, const mpf_class zz)
-:x_(xx), y_(yy), z_(zz.get_d())
+:x_(xx.get_d()), y_(yy.get_d()), z_(zz.get_d())
 {
 }
 

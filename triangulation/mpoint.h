@@ -47,9 +47,9 @@ struct mpoint
 private:
     mpoint(mpf_class xx, mpf_class yy, mpf_class zz);
     
-    mpf_class x_;
-    mpf_class y_;
-    mpf_class z_;
+    double x_;
+    double y_;
+    double z_;
 };
 
 #endif /* defined(__triangulation__mpoint__) */

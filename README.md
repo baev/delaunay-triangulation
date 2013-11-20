@@ -1,4 +1,4 @@
-delaunay-triangulation
+Delaunay triangulation
 ======================
 
 C++ Delaunay triangulation 
